@@ -1,5 +1,5 @@
 .container {
-    width: 800px;     /* Set the width of the container */
+    width: 1200px;     /* Set the width of the container */
   }
 
 .circle-image {
@@ -33,22 +33,26 @@ a:hover svg {
     padding: 10px 30px;
     justify: center;
 }
-  .navbar-custom ul {
-    margin: 0;
-    padding: 0;
+
+.navbar-custom ul {
+  margin: 0;
+  padding: 0;
 }
-  .navbar-custom ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 15px;
+
+.navbar-custom ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 15px;
 }
-  .navbar-custom ul li a {
-    text-decoration: none;
-    font-size: 16px;
-    color:rgb(255, 255, 255);
+
+.navbar-custom ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  color:rgb(255, 255, 255);
 }
-  .navbar-custom ul li a:hover {
-    color: #007bff;
+
+.navbar-custom ul li a:hover {
+  color: #007bff;
 }
 
 .card {
@@ -57,5 +61,5 @@ a:hover svg {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   padding: 20px;
   max-width: 400px;
-  margin: 20px;
+  margin-top: 20px;
 }
