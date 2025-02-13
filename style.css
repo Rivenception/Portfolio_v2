@@ -1,11 +1,11 @@
 .container {
-    width: 1200px;     /* Set the width of the container */
+    width: 1200px;
   }
 
 .circle-image {
     width: 60px;
     height: 60px;
-    overflow: hidden;     /* Hide anything that exceeds the circle */
+    overflow: hidden; /* Hide image area that exceeds the circle */
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -19,12 +19,13 @@
     object-fit: cover;
 }
 
+/* Icons on Home Page */
 a svg {
-    fill: rgb(177, 177, 177);
+  fill: rgb(177, 177, 177);
 }
-  
+
 a:hover svg {
-    fill: rgb(155, 155, 155);
+  fill: rgb(155, 155, 155);
 }
 
 .navbar-custom {
@@ -62,4 +63,51 @@ a:hover svg {
   padding: 20px;
   max-width: 400px;
   margin-top: 20px;
+}
+
+.photo-banner {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 30px;
+}
+
+.right-rotate {
+  border-radius: 45px;
+  aspect-ratio: 9/10;
+  width: 270px;
+  height: auto;
+  padding: 10px;
+  transform: rotate(2deg);
+  margin: 10px;
+}
+
+.left-rotate {
+  border-radius: 45px;
+  aspect-ratio: 9/10;
+  width: 270px;
+  height: auto;
+  padding: 10px;
+  transform: rotate(-2deg);
+  margin: 10px;
+}
+
+.download {
+  display: flex;
+  justify-content: center; /* Centers text horizontally */
+  align-items: center;     /* Centers text vertically */
+  gap: 8px;
+  font-weight: 500;
+  border-radius: 5px;
+  background-color: rgb(49, 49, 49);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border: 0;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 20px;
+}
+
+.download:hover {
+  background-color: rgb(59, 59, 59);
 }

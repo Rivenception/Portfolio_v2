@@ -9,7 +9,7 @@
   </head>
   <body style="background-color: rgb(44, 44, 44);">
     <div style="padding:30px;">
-    <nav class="navbar navbar-expand-lg navbar-custom" style="width: 30%; justify-content: center; justify-self: center;">
+    <nav class="navbar navbar-expand-lg navbar-custom" style="justify-content: center; justify-self: center; display: flex;">
         <ul class="navbar mb-0">
           <li class="nav-item">
             <a class="nav-link" href="../index.html" style="font-weight:bold">Home</a>
@@ -30,31 +30,31 @@
       </nav>
     </div>
     <div class="container" style="margin-top: 100px; display: flex; justify-content: space-between; align-items: flex-start;">
-      <div style="color:rgb(177, 177, 177); flex: 1; padding-right: 20px;">
+      <div style="color:rgb(177, 177, 177); flex: 1; padding-right: 30px;">
         <img class="circle-image" src="../images/LinkedIn.jpg">
-        <h1 style="color:whitesmoke; margin-top: 10px; font-weight: bold;">I’m Richard Mingione. I live in Connecticut, where I am close enough to New York City to be active in the tech community and far enough to enjoy nature.</h1>
+        <h1 style="color:whitesmoke; margin-top: 10px; font-weight: bold;">I’m Rick Mingione. I live in Connecticut, where I am close enough to New York City to be active in the tech community and far enough to enjoy nature.</h1>
         <br>
-        <p1 style="color:rgb(177, 177, 177); padding: 20px;">
+        <p1 style="color:rgb(177, 177, 177);">
           I come from a long line of carpenters and builders, where the thrill of creating something from nothing was woven into the fabric of my upbringing. From a young age, I was drawn to the process of construction, and it wasn’t long before my childhood obsession with Legos became my first true outlet for that creative spark. Each piece, each design, felt like a step toward something bigger. I could feel the power of an idea taking shape in my hands.
         </p1>
         <br>
         <br>
-        <p1 style="color:rgb(177, 177, 177); padding: 20px;"> 
+        <p1 style="color:rgb(177, 177, 177);"> 
           By middle school, I was convinced that I would become an architect. But when I realized that my artistic talent didn’t match my vision, it was a humbling moment. Still, I didn’t abandon my love for building. Instead, I pivoted, discovering new passions that aligned with the same deep-seated desire to create. Philosophy and economics captivated me in college. Though they might seem worlds apart from the physical realm of construction, I saw a striking similarity: in these subjects, arguments were the building blocks, and logic was the structure. The more I learned, the more I marveled at the intricate ways ideas were assembled into theories that still resonate with me today.
         </p1>
         <br>
         <br>
-        <p1 style="color:rgb(177, 177, 177); padding: 20px;">
+        <p1 style="color:rgb(177, 177, 177);">
           I’ve always believed that humanity stands on the shoulders of giants — thinkers like Aristotle, Plato, Socrates, Descartes, and Darwin. These profound minds shaped the course of history, crafting ideas that echo through the ages and continue to inspire generations. It’s awe-inspiring to imagine the impact they had, and it stirs something deep inside me to follow in their footsteps.
         </p1>
         <br>
         <br>
-        <p1 style="color:rgb(177, 177, 177); padding: 20px;">
+        <p1 style="color:rgb(177, 177, 177);">
           As my professional life progressed, I reached a point where the work I was doing felt uninteresting, and I became frustrated by the lack of vision at my company. Although I had found ways to innovate in my position, I felt like  there was a deeper potential I hadn’t tapped into. I began reflecting on my career path and remembered a modal logic class I had taken at Southern Connecticut State University, taught by Professor Heidi Lockwood. It was then, years after my undergrad, that I realized my passion for creation didn’t need to be tied to physical structures. The frontier I wanted to explore was metaphysical — one where I could build in the realm of thought and logic, and, eventually, code.
         </p1>
         <br>
         <br>
-        <p1 style="color:rgb(177, 177, 177); padding: 20px;">
+        <p1 style="color:rgb(177, 177, 177);">
           It was at this point in my life that I decided to take a bold step: I enrolled in a Full Stack Coding Bootcamp developed by the UConn School of Engineering. It was a leap into the unknown, but one that felt natural and long overdue. Two years later, I find myself on the cusp of a new journey, pursuing a Master’s of Science in Computer Science. Each line of code I write feels like another brick in the foundation of something larger, and I can’t wait to see where this path leads.
       </div>
       <div style="flex-direction: column;">
@@ -166,9 +166,21 @@
                 <span style="color:whitesmoke; font-size: small; display:block">Tableau</span>
             </div>
           </div>
-        </div>         
+        </div>
+        <button class="download" onclick="downloadFile()" style="color:whitesmoke;">Download CV 
+          <svg height="16px" width="16px" viewBox="0 0 16 16" fill="none" style="stroke: rgb(255, 255, 255);" aria-hidden="true" class="h-4 w-4 stroke-zinc-400 transition group-active:stroke-zinc-600 dark:group-hover:stroke-zinc-50 dark:group-active:stroke-zinc-50"><path d="M4.75 8.75 8 12.25m0 0 3.25-3.5M8 12.25v-8.5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+        </button>        
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
+<script>
+  function downloadFile() {
+      const fileUrl = "../docs/Rick Mingione Resume 02-13-25.pdf";
+      const link = document.createElement("a");
+      link.href = fileUrl;
+      link.download = "richard_mingione_cv.pdf";
+      link.click();
+  }
+</script>
